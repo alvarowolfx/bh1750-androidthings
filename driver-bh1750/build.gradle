@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.5.0'
+    }
+}
+
+android {
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+    buildToolsVersion '25.0.0'
+}
+
+dependencies {
+    provided rootProject.ext.dependencies['androidthings']
+    compile 'com.android.support:support-annotations:24.2.0'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+}
+
+publish {
+    userOrg = 'alvaroviebrantz'
+    groupId = 'com.alvarowolfx.androidthings'
+    artifactId = 'driver-bh1750'
+    publishVersion = '0.0.1'
+    desc = 'Android Things driver for the BH1750 ambient light sensor.'
+    website = 'https://github.com/alvarowolfx/bh1750-androidthings'
+}
