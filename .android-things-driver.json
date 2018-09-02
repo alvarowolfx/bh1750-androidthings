@@ -1,0 +1,22 @@
+{
+  "title": "BH1750",
+  "category": "ambient light sensor",
+  "samples": ["https://github.com/alvarowolfx/bh1750-androidthings/tree/master/sample"],  
+  "published-maven": {
+    "maven-url": "https://dl.bintray.com/alvarofellipe/androidthings/com/alvarowolfx/androidthings/driver-bh1750/",
+    "groupid": "com.alvarowolfx.androidthings",
+    "artifactid": "driver-bh1750"
+  },
+  "compatible-with": [
+      {
+        "title": "DFRobot Light Sensor BH1750",
+        "photo": "https://www.robotshop.com/media/catalog/product/cache/image/900x900/9df78eab33525d08d6e5fb8d27136e95/d/f/dfrobot-light-sensor-bh1750_2.jpg",
+        "url": "https://www.robotshop.com/en/dfrobot-light-sensor-bh1750.html?gclid=Cj0KCQjwlK7cBRCnARIsAJiE3MhRhIqLxc9QyeJZIYGVuaIJbM8G22HkqV9e89JfFpCicinncC5-6vcaAo1gEALw_wcB"
+      },
+      {
+        "title": "HitLetgo GY-302 BH1750 Light Intensity Module",
+        "photo": "https://images-na.ssl-images-amazon.com/images/I/61NbPs4FLSL._SX679_.jpg",
+        "url": "https://www.amazon.in/HiLetgo-GY-302-BH1750-Intensity-Illumination/dp/B00M0F29OS"
+      }
+    ]
+  }

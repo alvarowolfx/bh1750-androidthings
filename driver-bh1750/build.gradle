@@ -33,7 +33,7 @@ publish {
     repoName = 'androidthings'
     groupId = 'com.alvarowolfx.androidthings'
     artifactId = 'driver-bh1750'
-    publishVersion = '0.1'
+    publishVersion = '1.0'
     desc = 'Android Things driver for the BH1750 ambient light sensor.'
     website = 'https://github.com/alvarowolfx/bh1750-androidthings'
 }
