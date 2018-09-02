@@ -16,8 +16,8 @@
     package="com.alvarowolfx.androidthings.driver.bh1750" >
 
     <uses-sdk
-        android:minSdkVersion="24"
-        android:targetSdkVersion="25" />
+        android:minSdkVersion="27"
+        android:targetSdkVersion="27" />
 
     <application>
         <uses-library android:name="com.google.android.things" />
