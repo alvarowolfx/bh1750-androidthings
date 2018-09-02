@@ -19,7 +19,7 @@ import android.annotation.SuppressLint;
 import android.support.annotation.IntDef;
 
 import com.google.android.things.pio.I2cDevice;
-import com.google.android.things.pio.PeripheralManagerService;
+import com.google.android.things.pio.PeripheralManager;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;
@@ -142,7 +142,7 @@ public class Bh1750 implements AutoCloseable {
      * @throws IOException
      */
     public Bh1750(String bus, int address) throws IOException {
-        PeripheralManagerService pioService = new PeripheralManagerService();
+        PeripheralManager pioService = PeripheralManager.getInstance();
         I2cDevice device = pioService.openI2cDevice(bus, address);
         try {
             connect(device);
