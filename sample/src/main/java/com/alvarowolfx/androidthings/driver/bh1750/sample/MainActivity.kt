@@ -83,13 +83,13 @@ class MainActivity : Activity() {
     }
 
     fun updateDisplay(light: Float){
-        val lightValue = 45 * Math.log10(light.toDouble())
+        val lightValue = 35 * Math.log10(light.toDouble())
         val newAngle = Math.max(0.0, Math.min(lightValue,180.0))
         mServoLight?.angle = newAngle
 
-        mDisplay?.display(light.toInt())
+        mDisplay?.display(Math.min(light.toInt(), 9999))
 
-        val ledValue = Math.ceil(2 * Math.log10(light.toDouble())).toInt()
+        val ledValue = Math.ceil(1.5 * Math.log10(light.toDouble())).toInt()
         val leds = Math.max(0, Math.min(ledValue, RainbowHat.LEDSTRIP_LENGTH))
         val colors = IntArray(RainbowHat.LEDSTRIP_LENGTH)
         val color = when {
